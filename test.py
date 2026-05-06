@@ -11,4 +11,5 @@ path = root / "data/processed/cisplatin.parquet"
 
 df = pd.read_parquet(path, engine="pyarrow")
 print("Loaded:", path)
+print(df.head())
 validate_cisplatin_parquet(df)
